@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fredrik Lindahl - Portfolio</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!--<link rel=stylesheet href=mobile.css media="handheld">-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#first').parallax("50%", 0.5);
+	$('#second').parallax("50%", 0.5);
+
+	$('#third').parallax("50%", 0.5); $('#fourth').parallax("50%", 0.5);
+	$('#fifth').parallax("50%", 0.5);
+	$('#sixth').parallax("50%", 0.5);
+
+	$('#seventh').parallax("50%", 0.5); $('#eight').parallax("50%", 0.5);
+	$('#ninth').parallax("50%", 0.5); $('#tenth').parallax("50%", 0.5);
+
+})
+</script>
+</head>
+
+<body>
+
+
+<ul id="nav">
+<div class="float-left"><li><a href="#second" title="Next Section">5. semester - urbanitet</a></div></li>
+<div class="float-left"><li><a href="#fourth" title="Next Section">4. semester - ved Krudtløbsvej</a></div></li>
+<div class="float-left"><li><a href="#sixth" title="Next Section">4. semester - Eigtveds pakhus</a></div></li>
+<div class="float-left"><li><a href="#eigth" title="Next Section">3. semester - ved Amagerbanen</a></div></li>
+<div class="float-left"><li><a href="#tenth" title="Next Section">3. semester - materialer</a></div></li>
+<div class="float-left"><li><a href="#eleventh" title="Next Section">2. semester - </a></div></li>
+<div class="float-left"><li><a href="#twelvth" title="Next Section">1. semester - </a></div></li>
+</ul>
+	
+<div id="first">
+<div class="story">
+<div class="float-left">
+<p></p><p></p><p></p><p></p><p></p>
+</div>
+</div> <!--.story-->
+</div> <!--#first-->
+	
+<div id="second">
+<div class="story">
+<div class="float-left">
+<p></p><p></p><p></p><p></p><p></p>
+</div>
+</div> <!--.story-->
+</div> <!--#second-->
+	
+<div id="third">
+<div class="story">
+<div class="float-right"></div>
+</div> <!--.story-->
+</div> <!--#third-->
+	
+<div id="fourth">
+<div class="story">
+<div class="float-left"></div>
+<div class="float-right"></div>
+</div> <!--.story-->
+</div> <!--#fourth-->
+
+<div id="fifth">
+<div class="story">
+<div class="float-left"></div>
+<div class="float-right"></div>
+</div> <!--.story-->
+</div> <!--#fifth-->
+
+<div id="sixth">
+<div class="story">
+<div class="float-left"></div>
+<div class="float-right"></div>
+</div> <!--.story-->
+</div> <!--#sixth-->
+
+<div id="seventh">
+<div class="story">
+<div class="float-left"></div>
+<div class="float-right"></div>
+</div> <!--.story-->
+</div> <!--#seventh-->
+
+
+</body>
+</html>
