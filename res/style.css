@@ -1,0 +1,72 @@
+/* Remove defaults and set behaviour */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0px;
+	box-sizing: border-box;
+
+	user-select: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Background color */
+body {
+	background-color: #212121;
+}
+
+
+/* Text formatting */
+* {
+	font-family: "Work Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+p, a {
+	font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+
+	text-align: center;
+	/*text-transform: uppercase;*/
+	font-style: italic;
+    
+	color: #dfdfdf;
+}
+
+/* Links */
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+
+
+/* Content sizing */
+.center_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+img {
+	max-width: 240px;
+	border-radius: 50%;
+	padding-bottom: 24px;
+}
+
+/* Hover effects */
+@media screen and (min-width: 760px) { .content:not(.selected) {
+	opacity: 0.4;
+	filter: grayscale(100%);
+	transition-property: opacity, filter;
+	transition-duration: 0.2s, 0.2s;
+}
+.content:hover {
+	opacity: 1;
+	filter: grayscale(0%);
+}}
